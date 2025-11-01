@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budilnik</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gradient-to-br from-purple-200 via-pink-200 to-blue-200">
+    <div class="flex flex-col items-center gap-6 p-8 bg-white/70 backdrop-blur-2xl rounded-[3rem] shadow-[0_10px_30px_rgba(0,0,0,0.15)] w-80 hover:scale-105 transform transition-all duration-300">
+        <form id="alarm" class="flex flex-col items-center gap-4 w-full">
+            <input type="time" class="w-full px-6 py-3 rounded-full border-none outline-none text-center text-lg shadow-inner bg-white/80 placeholder-gray-400" />
+            <button type="submit" class="w-full px-6 py-3 rounded-full bg-gradient-to-r from-pink-400 to-purple-400 text-white font-semibold shadow-lg hover:shadow-2xl transform transition hover:-translate-y-1">
+                Budilnik qoyish
+            </button>
+        </form>
+
+       <audio id="audio" controls>
+        <source src="/audio/morning-sun-morning-alarm-for-samsung-iphone-423087.mp3">
+       </audio>
+
+        <!-- Pause button -->
+        <button id="pause-alarm" class="mt-2 w-full px-6 py-3 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 text-white font-semibold shadow-lg transform transition hover:-translate-y-1 hover:shadow-2xl cursor-pointer">
+            Pause
+        </button>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+
+
+
+
+</html>
